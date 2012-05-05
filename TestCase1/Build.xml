@@ -1,1 +1,8 @@
-<xml>master123</xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- abc_sh -->
+<project basedir="." name="TestCase1" default="createJar">
+    <target name="createJar">
+	    <jar destfile="./TestCase1.jar" basedir="./bin" update="yes">
+	    </jar>
+	</target>
+</project>
