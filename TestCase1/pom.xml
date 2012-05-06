@@ -23,12 +23,15 @@
            </plugin>
            <plugin>
 					    <groupId>org.apache.jmeter</groupId>
-					    <artifactId>maven-jmeter-plugin</artifactId>
-					    <version>1.0-GA</version>
-					    <configuration>
-					        <reportDir>./jmeter-reports</reportDir>
-					    </configuration>
-					</plugin>
+		        <artifactId>maven-jmeter-plugin</artifactId>
+		        <configuration>
+		          <includes>
+		            <include>myTest1.jmx</include>
+		            <include>myTest2.jmx</include>
+		          </includes>
+		          <reportDir>target/jmeter-reports</reportDir>
+		        </configuration>
+		      </plugin>
         </plugins>
   </build>
   <properties>
