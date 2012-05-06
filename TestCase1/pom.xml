@@ -26,7 +26,7 @@
 					    <artifactId>maven-jmeter-plugin</artifactId>
 					    <version>1.0-GA</version>
 					    <configuration>
-					        <reportDir>${project.build.directory}/jmeter-reports</reportDir>
+					        <reportDir>./jmeter-reports</reportDir>
 					    </configuration>
 					</plugin>
         </plugins>

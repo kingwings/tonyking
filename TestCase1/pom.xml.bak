@@ -21,6 +21,14 @@
                   </excludes>
               </configuration>
            </plugin>
+           <plugin>
+					    <groupId>org.apache.jmeter</groupId>
+					    <artifactId>maven-jmeter-plugin</artifactId>
+					    <version>1.0-GA</version>
+					    <configuration>
+					        <reportDir>${project.build.directory}/jmeter-reports</reportDir>
+					    </configuration>
+					</plugin>
         </plugins>
   </build>
   <properties>
