@@ -24,6 +24,15 @@
            <plugin>
 					    <groupId>com.lazerycode.jmeter</groupId>
 		        <artifactId>jmeter-maven-plugin</artifactId>
+		        <executions> 
+                    <execution> 
+                        <id>jmeter-tests</id> 
+                        <phase>verify</phase> 
+                        <goals> 
+                            <goal>jmeter</goal> 
+                        </goals> 
+                    </execution> 
+            </executions> 
 		        <configuration>
 		          <includes>
 		            <include>myTest1.jmx</include>
