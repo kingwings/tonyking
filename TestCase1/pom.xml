@@ -22,9 +22,8 @@
               </configuration>
            </plugin>
            <plugin>
-					    <groupId>org.apache.jmeter</groupId>
-		        <artifactId>maven-jmeter-plugin</artifactId>
-		        <version>1.0</version>
+					    <groupId>com.lazerycode.jmeter</groupId>
+		        <artifactId>jmeter-maven-plugin</artifactId>
 		        <configuration>
 		          <includes>
 		            <include>myTest1.jmx</include>
@@ -38,4 +37,12 @@
   <properties>
     <sonar.dynamicAnalysis>false</sonar.dynamicAnalysis>
   </properties>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.lazerycode.jmeter</groupId>
+  		<artifactId>jmeter-maven-plugin</artifactId>
+  		<version>1.4.1</version>
+  		<type>maven-plugin</type>
+  	</dependency>
+  </dependencies>
 </project>
